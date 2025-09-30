@@ -1,6 +1,6 @@
 <?php
     try {
-    $dsn = 'mysql:host=localhost;port=3307; dbname=my_guitar_shop1';
+    $dsn = 'mysql:host=localhost;port=3306; dbname=my_guitar_shop1';
     $username = 'root';
     $password = '';
     // $username = 'mgs_user';

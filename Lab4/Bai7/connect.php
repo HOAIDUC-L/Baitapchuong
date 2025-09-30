@@ -1,6 +1,6 @@
 <?php
 try {
-    $dsn = 'mysql:host=localhost;port=3307;dbname=tintuc';
+    $dsn = 'mysql:host=localhost;port=3306;dbname=tintuc';
     $username = 'root';
     $password = '';
     $connect = new PDO($dsn, $username, $password);
