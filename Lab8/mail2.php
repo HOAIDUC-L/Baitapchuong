@@ -15,9 +15,9 @@ if (isset($_POST)) {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
 
-        $nguoigui = 'vp22tp@gmail.com';  // Email gửi
+        $nguoigui = 'aquakirra@gmail.com';  // Email gửi
         $matkhau = 'pzxu acyb cbxc dvkk';                 // App password
-        $tennguoigui = 'Văn Phúc';             // Tên người gửi
+        $tennguoigui = 'Đưcs';             // Tên người gửi
 
         $mail->Username = $nguoigui;
         $mail->Password = $matkhau;
@@ -26,7 +26,7 @@ if (isset($_POST)) {
 
         $mail->setFrom($nguoigui, $tennguoigui);
         $to = $_POST['email'];                // Email nhận từ form
-        $to_name = "mấy con gà";                     // Tên người nhận mặc định
+        $to_name = "vịt";                     // Tên người nhận mặc định
 
         $tieude = $_POST['tieude'];           // Tiêu đề từ form
 

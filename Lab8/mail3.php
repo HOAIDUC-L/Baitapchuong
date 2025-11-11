@@ -23,12 +23,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
 
-        $mail->Username = 'vp22tp@gmail.com'; // Gmail của bạn
+        $mail->Username = 'aquakirra@gmail.com'; // Gmail của bạn
         $mail->Password = 'pzxu acyb cbxc dvkk'; // Mật khẩu ứng dụng (App Password)
         $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS; // Chuẩn mới nhất
         $mail->Port = 587;
 
-        $mail->setFrom('vp22tp@gmail.com', 'Văn Phúc đzaiiii 😎');
+        $mail->setFrom('aquakirra@gmail.com', 'Đức đzaiiii 😎');
 
         // ➕ Thêm tất cả email từ CSDL
         foreach ($emails as $email) {
@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div style="font-family: Arial; padding: 10px; border-radius: 10px; background: #f1f2f6;">
             <h3 style="color:#0984e3;">Xin chào bạn 💌</h3>
             <p>' . nl2br($_POST['content']) . '</p>
-            <p style="font-size: 13px; color: gray;">— Gửi từ hệ thống của Văn Phúc đzaiiii</p>
+            <p style="font-size: 13px; color: gray;">— Gửi từ hệ thống của Đức đzaiiii</p>
         </div>';
 
         // 📎 File đính kèm (nếu có)

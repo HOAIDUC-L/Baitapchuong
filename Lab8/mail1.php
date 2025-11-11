@@ -14,9 +14,9 @@ try {
     $mail->Host = 'smtp.gmail.com';  // SMTP server của Gmail
     $mail->SMTPAuth = true;          // Bật authentication
 
-    $nguoigui = 'vp22tp@gmail.com';  // Email gửi của bạn
+    $nguoigui = 'aquakirra@gmail.com';  // Email gửi của bạn
     $matkhau = 'pzxu acyb cbxc dvkk';     // App password từ Google
-    $tennguoigui = 'Văn Phúc đzaiii';  // Tên người gửi
+    $tennguoigui = 'Đức đzaiii';  // Tên người gửi
 
     $mail->Username = $nguoigui;     // SMTP username
     $mail->Password = $matkhau;      // SMTP password
@@ -24,14 +24,14 @@ try {
     $mail->Port = 465;               // Port cho SSL (587 cho TLS)
 
     $mail->setFrom($nguoigui, $tennguoigui);
-    $to = "quyn12479@gmail.com";   // Email nhận
-    $to_name = "Quý ";             // Tên người nhận
+    $to = "tienniem01@gmail.com";   // Email nhận
+    $to_name = "Tien ";             // Tên người nhận
 
     $mail->addAddress($to, $to_name); // Thêm người nhận
 
     $mail->isHTML(true);             // Set format email là HTML
     $mail->Subject = 'Test Website';  // Tiêu đề email
-    $noidungthu = "<b>Chào bé Quý!</b><br>Chào bạn!";  // Nội dung email
+    $noidungthu = "<b>Chào bé Tiên!</b><br>Chào bạn!";  // Nội dung email
     $mail->Body = $noidungthu;
 
     // Đính kèm file (tùy chọn)
